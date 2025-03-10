@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soufi Youssef Portfilio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar1.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Soufi Youssef">Soufi Youssef</h1>
+
+          <p class="title">Etudiant en 2ème année de BTS SIO</p>
+        </div>
+
+        <a href="./assets/youssef_soufi_CV.pdf" download class="btn-download">
+          📄 Télécharger mon CV
+        </a>
+        
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">youssef1@post.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telephone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+33 7 500 500 66</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">date de naissance</p>
+
+              <time datetime="1982-06-23">Juin 07, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">localisation</p>
+
+              <address>Avon, FRANCE</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/youssef-soufi-957248289/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Neymardasilvadossantosjunior" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/soufii.ysf/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>PROFIL</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>PARCOURS</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>PROJETS</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>VEILLE TECHNOLOGIQUE</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+       <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="profil">
+
+        <header>
+          <h2 class="h2 article-title">Présentation</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Actuellement en deuxième année de BTS SIO, 
+            avec un Bac Pro MELEC, je me suis orienté vers l'informatique par passion. Au cours de ma formation, 
+            j’ai développé un intérêt particulier pour le développement et la programmation,
+            ce qui m’a poussé à choisir l’option SLAM pour me spécialiser dans la création de sites.
+          </p>
+
+          <p>
+            Mon objectif est d'intégrer une licence professionnelle à Paris 8.
+            Bien que mes résultats actuels ne soient pas encore suffisants,
+            je suis déterminé à fournir les efforts nécessaires pour y accéder et continuer à développer mes compétences professionnelles.
+          </p>
+        </section>
+
+
+        <!--
+          - Opportunités après un BTS SIO
+-->
+
+<section class="service">
+
+  <h3 class="h3 service-title">Perspectives après un BTS SIO</h3>
+
+  <ul class="service-list">
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-job.jpg" alt="Débouchés professionnels" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Débouchés professionnels</h4>
+        <p class="service-item-text">
+          Accès à des métiers comme développeur web, administrateur systèmes et réseaux, technicien support, ou analyste en cybersécurité.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-study.png" alt="Poursuite d'études" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Poursuite d'études</h4>
+        <p class="service-item-text">
+          Possibilité de continuer en licence professionnelle, bachelor en informatique ou école d’ingénieur spécialisée en développement ou cybersécurité.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/icon-freelance.webp" alt="Freelance et entrepreneuriat" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Freelance et entrepreneuriat</h4>
+        <p class="service-item-text">
+          Opportunité de travailler en indépendant en développement web, administration réseau ou en cybersécurité.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - Compétences
+        -->
+
+        <section class="competences">
+
+          <h3 class="h3 clients-title">Compétences</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/html-logo.png" alt="html logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/css-logo.png" alt="css logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/js-logo.png" alt="js logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/php-logo.png" alt="php logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Mysql-Logo.png" alt="Mysql logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/github-logo.png" alt="github logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/kotlin-logo.png" alt="kotlin logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/angular-logo.png" alt="angular logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/bootstrap-logo.png" alt="bootstrap logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/typescript-logo.png" alt="typescript logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/react-logo.png" alt="react logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #Parcours
+      -->
+
+      <article class="parcours" data-page="parcours">
+
+        <header>
+          <h2 class="h2 article-title">Parcours</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Fin de College</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                Fin de parcours scolaire au college apres 3 ans (Zarzis, Tunisie)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">baccalauréat professionnel</h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                Lycée Léonard de Vinci (Melun, France)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">BTS Service Informatiques aux Organisations</h4>
+
+              <span>2023 — present</span>
+
+              <p class="timeline-text">
+                Option SLAM Lycée Léonard de Vinci (Melun, France)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire</h4>
+
+              <span>06/2022 — 07/2022</span>
+
+              <p class="timeline-text">
+                Concept réseau Paris - Paris, stage
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire</h4>
+
+              <span>01/2022 — 03/2022</span>
+
+              <p class="timeline-text">
+                Eurogem Saint denis Paris - Paris, stage
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire</h4>
+
+              <span>10/2022 — 12/2022</span>
+
+              <p class="timeline-text">
+                Paris, stage
+              </p>
+
+            </li>
+
+          </ol>
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Melun, stage
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire</h4>
+
+              <span>2025</span>
+
+              <p class="timeline-text">
+                Zarzis(Tunisie), stage
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+      </article>
+
+
+
+
+
+      <article class="projets" data-page="projets">
+
+        <header>
+          <h2 class="h2 article-title">Projets</h2>
+        </header>
+      
+        <section class="projects">
+      
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Tous</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Cours</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Stage</button>
+            </li>
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+      
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>Tous</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Cours</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Stage</button>
+              </li>
+            </ul>
+          </div>
+      
+          <ul class="project-list">
+      
+            <!-- Cours -->
+            <li class="project-item active" data-filter-item data-category="cours">
+              <a href="https://github.com/Neymardasilvadossantosjunior/geoworld.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Geowordl.png " alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Geowordl</h3>
+                <p class="project-category">Cours</p>
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="cours">
+              <a href="https://github.com/Neymardasilvadossantosjunior/exokotlinaventure.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/kotlinad.avif" alt="kotlinaventure" loading="lazy">
+                </figure>
+                <h3 class="project-title">Kotlin Aventure</h3>
+                <p class="project-category">Cours</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="cours">
+              <a href="https://github.com/Neymardasilvadossantosjunior/Savon.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/Savon.png" alt="savonapi" loading="lazy">
+                </figure>
+                <h3 class="project-title">Savon-API</h3>
+                <p class="project-category">Cours</p>
+              </a>
+            </li>
+      
+            <!-- Stage -->
+            <li class="project-item active" data-filter-item data-category="stage">
+              <a href="https://github.com/Neymardasilvadossantosjunior/Design-sprint.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/DesignSprint.png" alt="DesignSprint" loading="lazy">
+                </figure>
+                <h3 class="project-title">Stage</h3>
+                <p class="project-category">Stage</p>
+              </a>
+            </li>
+      
+          </ul>
+      
+        </section>
+      
+      </article>
+      
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const filterButtons = document.querySelectorAll("[data-filter-btn]");
+          const projects = document.querySelectorAll("[data-filter-item]");
+      
+          function showAllProjects() {
+              projects.forEach(project => project.classList.add("active"));
+          }
+      
+          showAllProjects();
+      
+          filterButtons.forEach(button => {
+              button.addEventListener("click", function () {
+                  filterButtons.forEach(btn => btn.classList.remove("active"));
+                  this.classList.add("active");
+      
+                  const filterValue = this.textContent.toLowerCase();
+      
+                  if (filterValue === "tous") {
+                      showAllProjects();
+                  } else {
+                      projects.forEach(project => {
+                          project.classList.toggle("active", project.dataset.category === filterValue);
+                      });
+                  }
+              });
+          });
+      });
+      </script>
+      
+
+
+
+
+      <!--
+        - #Veille Technologique
+      -->
+
+      <article class="veille technologique" data-page="veille technologique">
+
+        <header>
+          <h2 class="h2 article-title">Veille <br> Technologique</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">.</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">.</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">.</h3>
+
+                  <p class="blog-text">
+                    .
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
