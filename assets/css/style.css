@@ -4,7 +4,6 @@
 
 
 /**
- * copyright 2022 @codewithsadee
  */
 
 
@@ -807,6 +806,16 @@ main {
  * education and experience 
  */
 
+ .timeline-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline-text a:hover {
+  text-decoration: underline;
+}
+
+
 .timeline { margin-bottom: 30px; }
 
 .timeline .title-wrapper {
@@ -1066,6 +1075,7 @@ main {
 
 
 
+
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
@@ -1151,6 +1161,190 @@ main {
 }
 
 
+<style>
+/*-----------------------------------*\
+  #VEILLE TECHNOLOGIQUE - FLIP CARDS
+\*-----------------------------------*/
+
+/* Structure principale ajustée */
+.veille-technologique {
+  width: 100%;
+  max-width: 1400px; /* Augmenté pour permettre plus d'espace */
+  margin: 0 auto;
+}
+
+.blog-posts-list {
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-item {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* Carte flip étendue vers la droite */
+.flip-card {
+  background-color: transparent;
+  width: 120%; /* Étendu au-delà de 100% pour aller plus vers la droite */
+  max-width: 1400px; /* Limite maximale */
+  height: 400px;
+  perspective: 1000px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  margin-left: 0; /* Aligné à gauche */
+  position: relative;
+  left: -10%; /* Décalage négatif pour centrer visuellement malgré la largeur étendue */
+  transform: translateX(10%); /* Compense le décalage pour l'alignement visuel */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: var(--shadow-3);
+  border-radius: 16px;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, 
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Image optimisée pour s'étendre vers la droite */
+.flip-card-front {
+  background-color: var(--bg-gradient-jet);
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card-front figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Couvre tout l'espace */
+  object-position: left center; /* Positionne l'image à gauche pour étendre vers la droite */
+  border-radius: 16px 16px 0 0;
+}
+
+.flip-card-front .flip-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-400);
+}
+
+.flip-card-back {
+  background: var(--bg-gradient-jet);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  color: var(--white-2);
+  border: 1px solid var(--jet);
+  overflow-y: auto; /* Permettre le défilement si nécessaire */
+}
+
+.flip-card-back h3 {
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 15px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  width: 100%;
+  text-align: left;
+}
+
+.flip-card-back p {
+  font-size: var(--fs-8);
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: var(--light-gray);
+  text-align: left;
+  width: 100%;
+}
+
+.flip-card-link {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-400);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition-1);
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.flip-card-link:hover {
+  color: var(--vegas-gold);
+}
+
+/* Adaptation responsive */
+@media (max-width: 1200px) {
+  .flip-card {
+    width: 110%; /* Un peu moins large sur les écrans moyens */
+    transform: translateX(5%);
+    left: -5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flip-card {
+    width: 100%; /* Retour à la largeur normale sur mobile */
+    height: 350px;
+    transform: none;
+    left: 0;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: none; /* Désactive le flip sur mobile */
+  }
+  
+  .flip-card-back {
+    padding: 15px;
+  }
+  
+  .flip-card-back h3 {
+    font-size: var(--fs-7);
+  }
+  
+  .flip-card-back p {
+    font-size: var(--fs-9);
+  }
+}
+</style>
 
 
 
